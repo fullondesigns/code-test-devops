@@ -4,8 +4,7 @@ Ravelin Code Test For DevOps
 ## Summary
 We need an HTTP server that will accept a GET request to `https://LoadBalancer-IP-Address/` and return.
 ```javascript
-{
-  "foo": "barr",
+{"foo": "barr"}
 ```
 
 ## Requirements
