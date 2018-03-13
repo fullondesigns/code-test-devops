@@ -21,7 +21,7 @@ We need an HTTP server that will accept a GET request to `https://LoadBalancer-I
 ![alt text](https://raw.githubusercontent.com/unravelin/code-test-devops/master/network-diagram.png)
 
 ## Bonus Points
-Please complete the above test manually first - in case you run out of time. If you have experience with the below technologies, for bonus points, please feel to use them and sent us the code.
+Please complete the above test manually first - in case you run out of time. If you have experience with the below technologies, for bonus points, please feel to use them and send us the code.
 * Configuration management (e.g. puppet, chef, ansible)
 * Terraform
 * Bastion (a.k.a Jump Box)
