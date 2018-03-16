@@ -8,7 +8,7 @@ We need an HTTP server that will accept a GET request to `https://LoadBalancer-I
 ```
 
 ## Requirements
-* Create a new Google Cloud Platform project
+* Create a new Google Cloud Platform project - see https://cloud.google.com/free/
 * Use f1-micro (within the free tier)
 * Ensure the environment is completely secure.
 * The server machines scale at 40% CPU.
