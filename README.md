@@ -11,7 +11,8 @@ create MY-INSTANCE --project MY-PROJECT --image ravelin-code-test-image --image-
 ```
 
 ## Problems
-* Nginx not working.
+* Nginx not working properly. Please fix.
 * Application is failing to connect to api.ravelin.com. e.g. `curl api.ravelin.com`
-* CPU utilisation problem.
+* CPU utilisation problem on this server, all others seem fine?
+* Developer can't seem to login from Tuvalu
 * Cannot connect to `https://api.github.com/`
