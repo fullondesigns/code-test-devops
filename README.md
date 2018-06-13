@@ -22,8 +22,14 @@ create MY-INSTANCE --project MY-PROJECT --image ravelin-code-test-image --image-
 
 2. The application is failing to connect to api.ravelin.com. e.g. `curl api.ravelin.com` but it seems to be working from the developers local code and machine. Please ssh into the box and has a look and fix.
 
-3. This particular server seems to have higer CPU utilisation and if effecting performance. It can't be the application as it is running ok on other servers. Please fix.
+3. Please add the user `ravelin` as a root user, without a password but with the below public key as authentication.
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDywrXuIj6+WlhM4Us9te1YLQAlsp3sPKtiRCt2DJf27zQ2Ig5YWLUZT+QMzWrcPK8ZjT/GspLgpwM
+GbB7YNKxosftwJ1/wJqS7wnCzfRVmUWUSLTBU/0if3oAZwUZYu9hZU6KleZwXZ6nfErdJQtYgdOdXYagcPGz6LgCTbNj1Bd9wQmIW4Gbjd7puHjxNk+
+BR+yigxJO+1rpsj1OMT0ksA7c181fR8YSVVcrEfpXtiV8I+PtlkLTuE2kx9hwgbGZilEsXNgvpsRg1yxb5W2cGDvpgDLKRd9o+28oNWl1H3+NeWRBYr
+qiqpdUSmuLpUFW9ESXp69DhyEK8uUiL8Rxv ravelin@ravelin-code-test
 
-4. A developer is working remotely from Tuvalu; however, is unable to gain SSH access. Please can you find the problem and fix it for them.
+4. This particular server seems to have higer CPU utilisation and if effecting performance. It can't be the application as it is running ok on other servers. Please fix.
 
-5. Similarly to the problem connecting to api.ravelin.com, the application cannot connect to `https://api.github.com/`. Please see if you can fix this.
+5. A developer is working remotely from Tuvalu; however, is unable to gain SSH access. Please can you find the problem and fix it for them.
+
+6. Similarly to the problem connecting to api.ravelin.com, the application cannot connect to `https://api.github.com/`. Please see if you can fix this.
