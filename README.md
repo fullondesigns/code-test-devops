@@ -6,6 +6,7 @@ Ravelin Code Test For DevOps
 - Please do not spend more than 40 mins on any one problem.
 - Spend a maximum of 3 hours on the test.
 - Once you have completed the test please submit a readme. Ensure to include the IP address of the server and a readme of the things you tried for each question, even if you were unable to solve the problem.
+- Do not change the log destination of rsyslog or nginx
 
 ## Setup
 * Provider your GCP email address to Ravelin
