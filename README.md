@@ -11,7 +11,7 @@ Ravelin Code Test For DevOps
 ## Setup
 - Provide your GCP email address to Ravelin
 – install the GCP gcloud tool `https://cloud.google.com/sdk/gcloud/` 
-- Check you have access to the image by running `gcloud compute images list --project ravelin-code-test`
+- Check you have access to the image by running `gcloud compute images list --project ravelin-code-test1` you are looking for an image called `ravelin-code-test-image`
 - Create a new micro instance with:
 ```
 gcloud compute instances create MY-INSTANCE --project MY-PROJECT --image ravelin-code-test-image --image-project ravelin-code-test1 --zone us-east1-b --machine-type f1-micro
