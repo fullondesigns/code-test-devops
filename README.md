@@ -1,6 +1,9 @@
 Ravelin Code Test For DevOps
 ============================
 
+## Intro
+As a DevOps Engineer you will be required to configure clusters of ElasticSearch, ZooKeeper, NSQ, Redis and K8S using nothing but puppet and terraform. You will be expected to manage 100s instances that auto-scale, auto-heal and continually report themselves to prometheus – so engineers can immediately identify issues, when they occur. Unfortunately, we can't expect you to spin up hundreds of instances as part of a code test. So below is an idea we came up with, feedback is welcome.
+
 ## Intructions
 - Work through the questions, in order.
 - Please do not spend more than 40 mins on any one problem.
