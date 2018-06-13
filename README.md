@@ -26,7 +26,8 @@ create MY-INSTANCE --project MY-PROJECT --image ravelin-code-test-image --image-
 ```ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDywrXuIj6+WlhM4Us9te1YLQAlsp3sPKtiRCt2DJf27zQ2Ig5YWLUZT+QMzWrcPK8ZjT/GspLgpwM
 GbB7YNKxosftwJ1/wJqS7wnCzfRVmUWUSLTBU/0if3oAZwUZYu9hZU6KleZwXZ6nfErdJQtYgdOdXYagcPGz6LgCTbNj1Bd9wQmIW4Gbjd7puHjxNk+
 BR+yigxJO+1rpsj1OMT0ksA7c181fR8YSVVcrEfpXtiV8I+PtlkLTuE2kx9hwgbGZilEsXNgvpsRg1yxb5W2cGDvpgDLKRd9o+28oNWl1H3+NeWRBYr
-qiqpdUSmuLpUFW9ESXp69DhyEK8uUiL8Rxv ravelin@ravelin-code-test```
+qiqpdUSmuLpUFW9ESXp69DhyEK8uUiL8Rxv ravelin@ravelin-code-test
+```
 
 4. This particular server seems to have higer CPU utilisation and if effecting performance. It can't be the application as it is running ok on other servers. Please fix.
 
