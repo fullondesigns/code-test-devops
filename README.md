@@ -1,6 +1,12 @@
 Ravelin Code Test For DevOps
 ============================
 
+## Intructions
+- Work through the questions, in order.
+- Please do not spend more than 40 mins on any one problem.
+- Spend a maximum of 3 hours on the test.
+- Once you have completed the test please submit a readme. Ensure to include the IP address of the server and a readme of the things you tried for each question, even if you were unable to solve the problem.
+
 ## Setup
 * Provider your GCP email address to Ravelin
 * Check you have access to the image
