@@ -6,19 +6,19 @@ Ravelin Code Test For DevOps
 - Please do not spend more than 40 mins on any one problem.
 - Spend a maximum of 3 hours on the test.
 - Once you have completed the test please submit a readme. Ensure to include the IP address of the server and a readme of the things you tried for each question, even if you were unable to solve the problem.
-- Do not change the log destination of rsyslog or nginx
+- Do not change the log destination of rsyslog or nginx.
 
 ## Setup
-* Provider your GCP email address to Ravelin
-* Check you have access to the image
-* `gcloud compute images list --project ravelin-code-test`
-* Create a new image
+- Provide your GCP email address to Ravelin
+– install the GCP gcloud tool `https://cloud.google.com/sdk/gcloud/` 
+- Check you have access to the image by running `gcloud compute images list --project ravelin-code-test`
+- Create a new micro instance with:
 ```
 create MY-INSTANCE --project MY-PROJECT --image ravelin-code-test-image --image-project ravelin-code-test --zone us-east1-a --machine-type f1-micro
 ```
 
 ## Problems
-1. Nginx has been configured by a developer; however, it seems to be broken. Please ssh into the box and fix the issue. It is suppose to be listerning to https://XX.XX.XX.XX
+1. Nginx has been configured by a developer; however, it seems to be broken. Please ssh into the box and fix the issue. It is suppose to serving https from the machine's IP address.
 
 2. The application is failing to connect to api.ravelin.com. e.g. `curl https://api.ravelin.com` but it seems to be working from the developers local code and machine. Please ssh into the box and has a look and fix.
 
