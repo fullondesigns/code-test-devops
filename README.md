@@ -14,7 +14,7 @@ Ravelin Code Test For DevOps
 - Check you have access to the image by running `gcloud compute images list --project ravelin-code-test`
 - Create a new micro instance with:
 ```
-create MY-INSTANCE --project MY-PROJECT --image ravelin-code-test-image --image-project ravelin-code-test --zone us-east1-a --machine-type f1-micro
+gcloud compute instances create MY-INSTANCE --project MY-PROJECT --image ravelin-code-test-image --image-project ravelin-code-test --zone us-east1-a --machine-type f1-micro
 ```
 
 ## Problems
