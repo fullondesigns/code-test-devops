@@ -16,6 +16,7 @@ Ravelin Code Test For DevOps
 ```
 gcloud compute instances create MY-INSTANCE --project MY-PROJECT --image ravelin-code-test-image --image-project ravelin-code-test1 --zone us-east1-b --machine-type f1-micro
 ```
+- You will need to enable HTTPS traffic via the https://console.cloud.google.com/ by editing the instance.
 
 ## Problems
 1. Nginx has been configured by a developer; however, it seems to be broken. Please ssh into the box and fix the issue. It is suppose to serving https from the machine's IP address.
