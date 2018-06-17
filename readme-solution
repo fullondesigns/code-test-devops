@@ -1,0 +1,67 @@
+ip address: 35.231.133.191 
+
+Below are steps I have taken to resolve the issues mentioned in the test
+
+1) sudo nano /etc/nginx/nginx.conf 
+add this to the nginx.conf server block
+
+
+server {
+        listen 80 default_server;
+        listen [::]:80 default_server ipv6only=on;
+
+        listen 443 ssl;
+
+        root /usr/share/nginx/html;
+        index index.html index.htm;
+
+        server_name ravelin.com;
+        ssl_certificate /etc/nginx/ssl/nginx.crt;
+        ssl_certificate_key /etc/nginx/ssl/nginx.key;
+
+        location / {
+                try_files $uri $uri/ =404;
+        }
+}
+
+2) edit /etc/hosts file and remove the line related to api.ravelin.com
+3) add new user ravelin with command
+
+sudo adduser ravelin
+
+add ravelin to sudo users group by using the below command
+
+sudo usermod -aG sudo ravelin
+
+Edit ssh config: 
+sudo nano /etc/ssh/sshd_config
+Change this line:
+PasswordAuthentication no
+to
+PasswordAuthentication yes
+and also update 
+PermitRootLogin without-password
+Restart daemon: 
+sudo systemctl restart sshd
+
+create key pairs using sshkeygen and then sudo nano id_rsa.pub , paste the public key given in the github link provided for the test
+
+then ssh-copy-id -i root@@35.231.133.191
+
+then from terminal try ssh ravelin@35.231.133.191
+
+4) try commands such as uptime and top to check the cpu load and performance and take necessary action
+
+5) run the command to list all id's
+
+sudo ufw status numbered
+
+then delete the rule with the id. In our case type the following command:
+
+sudo ufw delete 4
+
+proceed with operation (y/n) : y
+
+Repeat the above command 2 more times to delete all deny rules for the Tuvalu IP addresses
+
+6) Was unable to resolve the https://api.github.com issue
